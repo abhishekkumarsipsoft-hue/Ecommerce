@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:pay="http://securepay.example.com/payment">
+  <soap:Body>
+    <pay:ChargeResponse>
+      <pay:transactionId>txn_sp_8a7f3c9d21e44b9a8c1d0e2f</pay:transactionId>
+      <pay:status>APPROVED</pay:status>
+      <pay:amountCharged>2698.00</pay:amountCharged>
+      <pay:authCode>AUTH_482917</pay:authCode>
+      <pay:gatewayRef>gw_ref_20261013_001</pay:gatewayRef>
+    </pay:ChargeResponse>
+  </soap:Body>
+</soap:Envelope>

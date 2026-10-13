@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:pay="http://securepay.example.com/payment">
+  <soap:Header>
+    <!-- Credentials at message level (WS-Security style header) -->
+    <pay:AuthHeader soap:mustUnderstand="1">
+      <pay:merchantId>CAMPUSEATS_MERCH_8421</pay:merchantId>
+      <pay:apiKey>sp_test_9f3k2pLq8xW1vT4yZ</pay:apiKey>
+      <pay:timestamp>2026-10-13T17:30:00Z</pay:timestamp>
+      <pay:nonce>6f8a9c1e-4b2d-4f0a-9c3e-1a2b3c4d5e6f</pay:nonce>
+    </pay:AuthHeader>
+  </soap:Header>
+  <soap:Body>
+    <pay:Charge>
+      <pay:orderRef>ORD_20261013_001</pay:orderRef>
+      <pay:amount>2698.00</pay:amount>
+      <pay:currency>INR</pay:currency>
+      <pay:cardToken>tok_visa_4242_securepay</pay:cardToken>
+      <pay:studentEmail>abhishek.student@campuseats.example.com</pay:studentEmail>
+    </pay:Charge>
+  </soap:Body>
+</soap:Envelope>

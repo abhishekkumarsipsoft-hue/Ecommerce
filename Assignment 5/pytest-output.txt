@@ -1,0 +1,24 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.10.6, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\abhis\AppData\Local\Programs\Python\Python310\python.exe
+cachedir: .pytest_cache
+rootdir: D:\STUDY\MCA\3RS SEM\Webservice\Our Website
+plugins: anyio-4.14.1
+collecting ... collected 15 items
+
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_create_succeeds_with_201_location_etag PASSED [  6%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_idempotent_repeat_returns_original_replayed PASSED [ 13%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_malformed_body_returns_400_problem PASSED [ 20%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_unknown_id_returns_404 PASSED [ 26%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_missing_auth_returns_401 PASSED [ 33%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_accept_non_json_returns_406 PASSED [ 40%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_conditional_get_returns_304_when_etag_matches PASSED [ 46%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_conditional_get_returns_200_when_etag_stale PASSED [ 53%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_conditional_write_returns_412_on_mismatch PASSED [ 60%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_conditional_write_succeeds_when_etag_matches PASSED [ 66%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_rate_limit_returns_429_and_retry_after PASSED [ 73%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_cors_and_security_headers_present PASSED [ 80%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_options_returns_allow PASSED [ 86%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_delete_returns_204 PASSED [ 93%]
+Ecommerce-1/Assignment 5/tests/test_orders5.py::test_x_http_method_override_fallback PASSED [100%]
+
+============================= 15 passed in 0.27s ==============================

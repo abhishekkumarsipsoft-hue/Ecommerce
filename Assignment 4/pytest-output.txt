@@ -1,0 +1,13 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.10.6, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\abhis\AppData\Local\Programs\Python\Python310\python.exe
+cachedir: .pytest_cache
+rootdir: D:\STUDY\MCA\3RS SEM\Webservice\Our Website
+plugins: anyio-4.14.1
+collecting ... collected 4 items
+
+Ecommerce-1/Assignment 4/tests/test_orders.py::test_create_succeeds_with_201_and_location PASSED [ 25%]
+Ecommerce-1/Assignment 4/tests/test_orders.py::test_idempotent_repeat_returns_original PASSED [ 50%]
+Ecommerce-1/Assignment 4/tests/test_orders.py::test_failure_path_returns_4xx_problem PASSED [ 75%]
+Ecommerce-1/Assignment 4/tests/test_orders.py::test_unknown_id_returns_404 PASSED [100%]
+
+============================== 4 passed in 0.24s ==============================

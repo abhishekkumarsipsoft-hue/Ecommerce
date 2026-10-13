@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:pay="http://securepay.example.com/payment">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>Payment declined by issuer</faultstring>
+      <detail>
+        <pay:PaymentFault>
+          <pay:code>card_declined</pay:code>
+          <pay:reason>Insufficient funds / card limit exceeded for order ORD_20261013_001</pay:reason>
+          <pay:retryable>false</pay:retryable>
+          <pay:orderRef>ORD_20261013_001</pay:orderRef>
+        </pay:PaymentFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
