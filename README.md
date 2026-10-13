@@ -1,25 +1,23 @@
-# CampusEats
+# Ecommerce
 
-Online bags store for college students, built with the MERN stack (MongoDB, Express, React, Node) with Razorpay for payments.
-
-> Naam "CampusEats" hai kyunki pehle idea canteen ka tha, ab ye campus ke liye bags bechta hai. (Naam change kar sakte hain baad me.)
+An online store for bags (backpacks, laptop bags, sling bags) built with the MERN stack: MongoDB, Express, React and Node. Payments will go through Razorpay (test mode).
 
 ## What it will do
 - show bags with category and price
 - search and filter bags
 - cart and checkout
-- pay online with Razorpay (test mode)
-- admin can add / edit / remove bags
+- pay online with Razorpay
+- admin can add, edit and remove bags
 
 ## Folder structure
 ```
-campuseats/
+Ecommerce/
 ├── backend/      Express + MongoDB API
 │   ├── config/   db connection
 │   ├── models/   mongoose schemas
-│   └── routes/   product + payment routes
-├── frontend/     React app (to be created with Vite)
-├── docs/         notes and API list
+│   └── routes/   product and payment routes
+├── frontend/     React app (to be created)
+├── docs/         notes and screenshots
 ├── brief.md
 ├── http-log.md
 └── network-analysis.md
@@ -29,16 +27,19 @@ campuseats/
 ```
 cd backend
 npm install
-copy .env.example .env     (then fill values)
+```
+Make a `.env` file (copy `.env.example`) and fill `MONGO_URI` and the Razorpay keys. Then:
+```
+npm run seed     (adds 8 sample bags)
 npm run dev
 ```
 Check: http://localhost:5000/api/health
 
 ## Status
-- [x] repo + folders
-- [x] backend skeleton (products, razorpay order + verify)
+- [x] repo and folders
+- [x] backend: products API, seed data, razorpay order + verify routes
 - [ ] frontend
 - [ ] auth, cart, admin panel
 
-## Assignment files
-`http-log.md`, `network-analysis.md`, `brief.md` are for CS543 Assignment 1.
+## Assignment files (CS543 Assignment 1)
+`http-log.md`, `network-analysis.md`, `brief.md`
